@@ -71,7 +71,7 @@ namespace TheMulti0.Console
                 ? string.Empty 
                 : $"\n{exception.StackTrace}";
                 
-            return $"{state}\nUnhandled exception. {exception.GetType().Name}{stackTrace}";
+            return $"{state}\nUnhandled exception. {exception.GetType().Name}: {exception.Message}{stackTrace}";
         }
     }
 }
